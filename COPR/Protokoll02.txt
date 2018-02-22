@@ -1,4 +1,4 @@
-**Ubuntu Server**
+*Ubuntu Server*
 
 1) Partitionieren (SWAP, ROOT)
 2) Partitionen als **RAID** benutzen
