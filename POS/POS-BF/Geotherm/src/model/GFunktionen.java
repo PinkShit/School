@@ -11,7 +11,7 @@ import java.util.*;
 
 public class GFunktionen {
 	
- 
+	
 	
 	//Konstruktor
 	public GFunktionen() {
@@ -21,6 +21,11 @@ public class GFunktionen {
 	
 	//
 	public void knoten(int anzk) {
+		
+	}
+	
+	//
+	public void kanten() {
 		
 	}
 	
