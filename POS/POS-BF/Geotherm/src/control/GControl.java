@@ -1,9 +1,12 @@
 package control;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import model.*;
 import view.*;
 
-public class GControl {
+public class GControl implements ActionListener{
 	
 	//Attribute
 	private GFunktionen gfun;
@@ -21,5 +24,11 @@ public class GControl {
 	
 	public static void main(String[] args) {
 		new GControl();
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent a) {
+		
+		
 	}
 }

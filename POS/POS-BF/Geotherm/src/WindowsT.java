@@ -12,10 +12,12 @@ import javax.swing.JTextPane;
 import javax.swing.JComboBox;
 import javax.swing.JMenuBar;
 import java.awt.List;
+import javax.swing.JTable;
 
 public class WindowsT {
 
 	private JFrame frame;
+	private JTable table;
 
 	/**
 	 * Launch the application.
@@ -52,6 +54,9 @@ public class WindowsT {
 		JPanel panel = new JPanel();
 		frame.getContentPane().add(panel, BorderLayout.NORTH);
 		panel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		
+		table = new JTable();
+		frame.getContentPane().add(table, BorderLayout.CENTER);
 		
 		JMenuBar menuBar = new JMenuBar();
 		frame.setJMenuBar(menuBar);

@@ -6,15 +6,9 @@ import javax.swing.*;
 
 public class GPanel extends JPanel {
 	
+	JPanel jp1 = new JPanel();
+	
 	public GPanel() {
-		
-	}
-	
-	/*
-	 * (non-Javadoc)
-	 * @see javax.swing.JComponent#paintComponent(java.awt.Graphics)
-	 */
-	public void paintComponent(Graphics g) {	   
-	
+		this.setLayout();
 	}
 }
