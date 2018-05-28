@@ -11,7 +11,10 @@ public class GControl implements ActionListener{
 	//Attribute
 	private GFunktionen gfun;
 	private static GPanel gpan;
-	private Matrix ma;
+	private Matrix ma = new Matrix(15,15);;
+	int b = 0;
+	String a = "";
+	int c = 0;
 	
 	/*
 	 * 
@@ -33,13 +36,21 @@ public class GControl implements ActionListener{
 	 * 
 	 */
     @Override
-    public void actionPerformed(ActionEvent e) {        	
+    public void actionPerformed(ActionEvent e) {   
+    	
         if (e.getSource() ==  gpan.getRandom()) {
-            ma = new Matrix(15,15);
-        	ma.fuellenZufaellig();
-        	
-        	String a = "";
+            
+            
+            if (b == 0) {
+            	ma.fuellenZufaellig();
+            	b++;
+            }
+            
         	for(int i = 0 ; i<ma.matrix.length;i++) {
+        		if(c>0) {
+        			gpan.jtf.setText("\n");
+        			
+        		}
     			for(int j = 0 ; j<ma.matrix.length;j++) {
     				
     				a = a + ma.matrix[i][j];

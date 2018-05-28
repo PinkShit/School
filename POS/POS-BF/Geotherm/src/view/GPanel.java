@@ -15,6 +15,7 @@ public class GPanel extends JPanel{
 	JPanel center;
 	
 	
+	
 	//Menu
 	JMenuBar menuBar;
 	JMenu menu, submenu;
@@ -27,7 +28,7 @@ public class GPanel extends JPanel{
 	public JButton setsize;
 	
 	//Label
-	public JLabel idk;
+	public JLabel idk = new JLabel();
 	
 	//Textarea
 	public JTextArea jtf;
@@ -46,6 +47,9 @@ public class GPanel extends JPanel{
 		//TextArea
 		jtf = new JTextArea();
 		jtf.setSize(450,200);
+		
+		//Label
+	
 		
 		//Menu
 		menuBar = new JMenuBar();
